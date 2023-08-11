@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 2</title>
+
+     <!----------ESTILO--------->
+     <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /*TIPO DA FONTE*/
+        }
+
+        table {
+            width: 400px; /*LARGURA DA TABELA*/
+            border-collapse: collapse; /*ELIMINA ESPAÇO ENTRE AS CÉLULAS*/
+        }
+
+        td, th {
+            border: 1px solid black; /*EXPESSURA E ESTILO DA BORDA DAS CÉLULAS*/
+            padding: 10px; /*DISTÂNCIA ENTRE E CONTEÚDO E AS BORDAS */
+        }
+
+        caption {
+            font-size: 22px; /*TAMANHO DA FONTE DO TÍTULO DA TABELA*/
+            font-weight: bold; /*PESO OU INTENSIDADE DA FONTE*/
+            padding: 10px; /*DISTÂNCIA ENTRE O CONTEÚDO E AS BORDAS*/
+            background-color: rgb(255, 144, 144); /*COR DO FUNDO DO TÍTULO DA TABELA*/
+        }
+
+        thead, tfoot {
+            background-color: #12ab57; /*COR DO FUNDO DO CABEÇALHO E RODAPÈ DA TABELA*/
+            color: rgb(255, 144, 144); /*COR DA FONTE*/
+        }
+
+        tbody > tr:nth-child(odd) { /*LINHAS ÍMPARES*/
+            background-color: rgb(144, 255, 235); /*COR DE FUNDO DA LINHA*/
+        }
+
+        tbody > :nth-child(even) { /*LINHAS PARES*/
+            background-color: rgb(194, 255, 244); /*COR DE FUNDO DA LINHA*/
+        }
+
+        td.num {
+            text-align: right; /*ALINHAMENTO DO TEXTO DA CLASSE "NUM"*/
+        }
+
+    </style>
+
+    <!-----FIM ESTILO----->
+
+</head>
+<body>
+    <h1>EXERCITANTO TABELAS COM IMAGENS</h1>
+
+    <table>
+        <caption>COMIDAS FAVORITAS</caption>
+
+        <tr>
+            <th style="width: 40px;">Grupos</th>
+            <th style="width: 40px;">Nomes</th>
+            <th colspan="3">Escolhas</th>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Mulheres</th>
+            <td>Maria</td>
+            <td><img src="imagens/melancia.jpg" alt="melância", style="left: 60;", width="110px"></td>
+            <td><img src="imagens/pamonha-r1ak8eh2lcfr.webp" alt="pamonha", style="left: 60", width="110px"></td>
+            <td><img src="imagens/347923-original.webp" alt="taco", width="110px"></td>
+        </tr>
+
+        <tr>
+            <td>Mariana</td>
+            <td><img src="imagens/brigadeiro-gourmet-melken-1950x1300-1.jpg" alt="brigadeiro", width="110px"></td>
+            <td><img src="imagens/sabores-de-sorvete-heading.jpg" alt="sorvete", width="110px"></td>
+            <td><img src="imagens/1_GG_Nutella-140g.jpg" alt="nutella", width="90px"></td>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Homens</th>
+            <td>Luiz</td>
+            <td><img src="imagens/354277-original.jpg" alt="coxinha", width="110px"></td>
+            <td><img src="imagens/325115-original.webp" alt="lasanha", width="110px"></td>
+            <td><img src="imagens/IMG_2365.webp" alt="costela", width="110px"></td>
+        </tr>
+
+        <tr>
+            <td>Lucas</td>
+            <td><img src="imagens/massa-de-pizza-7.jpeg" alt="pizza", width="110px"></td>
+            <td><img src="imagens/oferta_15119776221317_Ofertas.jpg" alt="churrasco", width="110px"></td>
+            <td><img src="imagens/Feijoada-deliciosa.webp" alt="feijoada", width="110px"></td>
+        </tr>
+
+        <tr>
+            <th colspan="2">Total</th>
+            <th colspan="3">12 opções</th>
+        </tr>
+
+
+
+    </table>
+</body>
+</html>
